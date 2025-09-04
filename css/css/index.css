@@ -1,0 +1,46 @@
+body {
+  background-color: #d4116c;
+  color: #000000;
+  font-family: cursive;
+}
+a {
+ 
+  padding: 20px;
+ color: white ; 
+ border: 2px solid black; 
+ text-decoration: dotted;
+ display: inline-block;
+ border-radius: 6px;
+}
+
+section{
+  margin-top:40px;
+  padding: 20px; 
+}
+#About{ 
+  text-align:left ;
+  width: 200px; 
+}
+
+ h2{
+  font-size: large;
+  font-weight: 200;
+  color:aqua;
+}
+h1{
+  color:rgb(136 249 0);
+}
+#Experience ul{
+  list-style-type: none;
+  padding: 10px;
+
+}
+#Experience li{
+  background-color: blue;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px  dashed white;
+  color: rgb(0, 218, 247);
+
+
+}
