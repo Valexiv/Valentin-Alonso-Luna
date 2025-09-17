@@ -1,5 +1,5 @@
 body {
-  background-color: #d4116c;
+  background-color: #7a1f4a;
   color: #000000;
   font-family: cursive;
 }
@@ -39,8 +39,68 @@ h1{
   background-color: blue;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px  dashed white;
+  border: 1px  solid white;
   color: rgb(0, 218, 247);
 
 
+}
+
+#experience {
+  padding: 40px 20px;
+}
+
+.job {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.job-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.job-date {
+  font-size: 0.9em;
+  color: #f7f7f7;
+}
+
+.job-description {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+#connect {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #dac5c5;
+  padding: 10px 20px;
+  border: 2px solid #eae3e3;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #127bde;
+  color: white;
 }
