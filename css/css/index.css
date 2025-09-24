@@ -104,3 +104,56 @@ h1{
   background-color: #127bde;
   color: white;
 }
+
+/* orignal code for desktop */ 
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 37.5em) {
+  body {
+    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 1.5em; 
+    color: #004d40;   
+  }
+
+  #Experience ul {
+    padding: 5px;              
+    background-color: #f0f8ff; 
+  }
+
+  .social-links a {
+    font-size: 1em;            
+    font-style: italic;        
+  }
+}
+
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 37.563em) and (max-width: 64em) {
+  body {
+    font-size: 1.4em;
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 2em;     
+    color: #ffcc00;    
+  }
+
+  #Experience li {
+    background-color: #4a148c; 
+    padding: 15px;             
+  }
+
+  .social-links a {
+    font-size: 1.3em;          
+    font-family: 'Open Sans', sans-serif; 
+  }
+}
+
+
+
