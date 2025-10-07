@@ -156,4 +156,20 @@ h1{
 }
 
 
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+#skills li {
+  color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  flex: 1 1 150px; 
+  text-align: center;
+}
