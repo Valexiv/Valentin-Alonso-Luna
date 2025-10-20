@@ -26,3 +26,41 @@ fetch('https://api.github.com/users/Valexiv/repos')
    for (let i=0;i< repositories.length; i++)
      { let project=document.createElement("li"); project.innerText= repositories[i].name; projectList.appendChild(project); }; })
    .catch(error=>{ console.error("Error fetching repositories: ", error); });
+
+let messageForm=document.forms["leave_message"];
+messageForm.addEventListener("submit", function(event){
+  event.preventDefault();
+
+  let userName = event.target.elements["usersName"].value;
+  let userEmail = event.target.elements["usersEmail"].value;
+  let usersMessage = event.target.elements["usersMessage"].value;
+ 
+  console.log("Name:", userName);
+  console.log("Email:", userEmail);
+  console.log("Message:", usersMessage);
+
+let messageSection=document.getElementById("messages");
+let messageList = messageSection.querySelector("ul");
+let newMessage= document.createElement("li"); 
+newMessage.innerHTML = `
+  <a href="mailto:${userEmail}">${userName}</a>
+  <span> — ${usersMessage}</span>
+`;
+
+let removeButton=document.createElement("button");
+removeButton.innerText="remove";
+removeButton.type="button";
+removeButton.addEventListener("click", function (){
+
+  let entry=this.parentNode;
+  entry.remove();
+});
+  newMessage.appendChild(removeButton);
+messageList.appendChild(newMessage);
+
+  document.forms["leave_message"].reset();
+
+}); 
+
+
+
